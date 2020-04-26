@@ -1,0 +1,16 @@
+#barraBlanca {
+    width: 400px;
+    float: left;
+    background-color: white;
+}
+
+#contenedorFoto {
+    width: 900px;
+    float: left;
+}
+
+#menu {}
+
+#fotohome {
+    width: inherit;
+}
