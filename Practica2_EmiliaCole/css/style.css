@@ -1,16 +1,208 @@
-#barraBlanca {
-    width: 400px;
-    float: left;
-    background-color: white;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Work+Sans&display=swap');
+
+/*----- Home Styles -------*/
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#contenedorFoto {
-    width: 900px;
-    float: left;
+#index {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/emilia-home.jpg") no-repeat right top fixed;
+    background-size: contain;
 }
 
-#menu {}
+main nav {
+    margin: 15px 45px;
+}
 
-#fotohome {
-    width: inherit;
+main nav a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    color: rgb(148, 147, 147);
+    font-size: 16px;
+}
+
+main nav ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+li {
+    line-height: 37px;
+}
+
+li a img {
+    width: 20px;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+h1.innertitle {
+    font-family: 'Work Sans', sans-serif;
+    width: 180px;
+    color: #3b3a3a;
+    font-weight: 700;
+    margin-left: 40px;
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin-top: 140px;
+}
+
+h2.innertitle {
+    width: 100%;
+    font-size: 72PX;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 170px;
+    margin-left: 10px;
+}
+
+
+/*---------- About Styles ----------*/
+
+#about {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/emilia-about.jpg") no-repeat right top fixed;
+    background-size: contain;
+}
+
+.nav-about ul li {
+    display: inline;
+}
+
+.nav-about ul {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-about nav {
+    margin: 30px 45px 30px 0px;
+}
+
+#optionSocial a img {
+    width: 20px;
+}
+
+#optionSocial div {
+    display: inline;
+    text-align: right;
+}
+
+div#optionSocial {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#innertitle-about {
+    font-family: 'Work Sans', sans-serif;
+    width: 300px;
+    color: #3b3a3a;
+    font-weight: bolder;
+    margin-left: 10px;
+    letter-spacing: -2px;
+    font-size: 70px;
+    margin-top: 150px;
+}
+
+article.reviewStyle1 {
+    width: 700px;
+    font-family: Raleway;
+    color: #49A391;
+    margin: 30px 0px 30px 40px;
+    font-weight: 300;
+}
+
+.reviewStyle1 h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.reviewStyle1 h2 {
+    font-weight: 400;
+}
+
+
+/*---------- Music Styles ----------*/
+
+#music {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/emilia-music-top.jpg") no-repeat top fixed;
+    background-size: contain;
+}
+
+nav.nav-music {
+    margin: 30px 10px 30px 0px;
+}
+
+.nav-music ul li {
+    display: inline;
+}
+
+.nav-music ul {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav.nav-music ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    font-size: 16px;
+}
+
+
+/*---------- Contact Styles ----------*/
+
+#contact {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1#contact-title {
+    font-size: 4em;
+}
+
+h2#here {
+    padding-top: 30px;
+}
+
+article.contactStyle1 {
+    width: 700px;
+    font-family: 'Open Sans', sans-serif;
+    color: #49A391;
+    margin: 30px 0px 30px 0px;
+    font-weight: 300;
+}
+
+article.contactStyle1 h3 {
+    width: 700px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(92, 88, 88);
+    font-weight: 300;
+}
+
+article.contactStyle1 b {
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+}
+
+h3 a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(92, 88, 88);
+}
+
+abbr {
+    text-decoration: none;
 }
