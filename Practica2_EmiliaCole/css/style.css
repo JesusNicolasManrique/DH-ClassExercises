@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway|Work+Sans&display=swap');
 
 /*----- Home Styles -------*/
 
@@ -20,7 +20,6 @@ main nav {
 
 main nav a {
     text-decoration: none;
-    color: gray;
     font-weight: bold;
     color: rgb(148, 147, 147);
     font-size: 16px;
@@ -73,18 +72,18 @@ h2.innertitle {
     background-size: contain;
 }
 
-.nav-about ul li {
+.navAbout ul li {
     display: inline;
 }
 
-.nav-about ul {
+.navAbout ul {
     display: block;
     text-align: right;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.nav-about nav {
+.navAbout nav {
     margin: 30px 45px 30px 0px;
 }
 
@@ -102,7 +101,7 @@ div#optionSocial {
     margin-right: 15px;
 }
 
-#innertitle-about {
+#innertitleAbout {
     font-family: 'Work Sans', sans-serif;
     width: 300px;
     color: #3b3a3a;
@@ -135,41 +134,81 @@ article.reviewStyle1 {
 
 #music {
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    background: url("../img/emilia-music-top.jpg") no-repeat top fixed;
-    background-size: contain;
+    font-family: 'work Sans', sans-serif;
+    background: url("../img/emilia-music-top.jpg") no-repeat;
+    background-size: 100% 170px;
 }
 
-nav.nav-music {
-    margin: 30px 10px 30px 0px;
+nav.navMusic {
+    margin: 42px 10px 0px 0px;
 }
 
-.nav-music ul li {
+.navMusic ul li {
     display: inline;
 }
 
-.nav-music ul {
+.navMusic ul {
     display: block;
     text-align: right;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-nav.nav-music ul li a {
+nav.navMusic ul li a {
     text-decoration: none;
     font-weight: bold;
     color: rgb(26, 26, 26);
+    font-size: 17px;
+}
+
+h1#musicTitle {
+    padding-top: 37px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4em;
+}
+
+h5.songsLinks {
+    margin: 15px 0px 10px 10px;
+    color: black;
+}
+
+div {
+    padding: 25px 25px;
+}
+
+h5#directLinks {
+    margin-top: 35px;
+    color: black;
+}
+
+h5 {
+    color: darkgray;
+}
+
+div.linkTop {
+    margin: 15px 0px;
+    padding: 0px;
+}
+
+.top {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(148, 147, 147);
     font-size: 16px;
+}
+
+a.linkSong {
+    text-decoration: none;
 }
 
 
 /*---------- Contact Styles ----------*/
 
 #contact {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'work Sans', sans-serif;
 }
 
-h1#contact-title {
+h1#contactTitle {
     font-size: 4em;
 }
 
