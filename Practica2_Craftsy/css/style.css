@@ -1,0 +1,40 @@
+/*------ Index styles -----*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+}
+#index {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/bg-2.png") repeat;
+}
+.rightMenu {
+    /* text-align: right;*/
+}
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+.logo {
+    float: left;
+}
+.main-nav {}
+.main-nav ul {}
+.main-nav ul li {
+    display: inline;
+}
+a {}
+.producto {
+    width: 300px;
+    float: left;
+    margin: 10px;
+}

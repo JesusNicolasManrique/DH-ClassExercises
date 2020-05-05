@@ -72,8 +72,8 @@ h2.innertitle {
     background-size: contain;
 }
 
-.navAbout ul li {
-    display: inline;
+.navAbout nav {
+    margin: 30px 45px 30px 0px;
 }
 
 .navAbout ul {
@@ -83,8 +83,8 @@ h2.innertitle {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.navAbout nav {
-    margin: 30px 45px 30px 0px;
+.navAbout ul li {
+    display: inline;
 }
 
 #optionSocial a img {
