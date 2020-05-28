@@ -12,10 +12,11 @@ const controller = {
 
     },
     search: (req, res) => {
-        const search = req.query.keywords;
-        let fiilteredProduct = products.filter(product => product.name.includes(search));
-        let productsQuantity = Object.entries(fiilteredProduct).length;
-        res.render('results', { data: fiilteredProduct, toThousand, productsQuantity });
+        let search = req.query.keywords;
+        search = search.toUpperCase();
+        let filteredProduct = products.filter(product => product.name.toUpperCase().includes(search));
+        let productsQuantity = Object.entries(filteredProduct).length;
+        res.render('results', { data: filteredProduct, toThousand, productsQuantity });
     },
 };
 
