@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+</head>
+
+<body class="">
+
+    <svg width="100%" height="100%">
+        <pattern id="pattern-cubes" x="0" y="126" patternUnits="userSpaceOnUse" width="126" height="200" viewBox="0 0 10 16"> 
+            <g id="cube">
+               <path class="<%= color %>" d="M0 0l5 3v5l-5 -3z" />
+               <path class=" <%=lightcolor%>" d="M10 0l-5 3v5l5 -3" />
+            </g>
+                    <use x="5" y="8" xlink:href="#cube" />
+                    <use x="-5" y="8" xlink:href="#cube" />
+        </pattern>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-cubes)" />
+     </svg>
+
+    <div class="container">
+        <div>
+            <h1>Selecione un color</h1>
+
+        </div>
+        <div>
+            <form action="/color" method="POST">
+                <select name="color">
+                    <option value="white">Elegi un color primario </option>
+                    <option value="yellow"<%= (color == 'yellow')?'selected':'' %> >Amarillo  </option>
+                    <option value="red"<%= (color == 'red')?'selected':'' %> >Rojo</option>
+                    <option value="blue"<%= (color == 'blue')?'selected':'' %> >Azul</option>
+                    <option value="green"<%= (color == 'green')?'selected':'' %> >Verde</option>
+                 </select>
+
+
+                <select name="lightcolor">
+                    <option value="white">Elegi un color secundario </option>
+                    <option value="yellow"<%= (lightcolor == 'yellow')?'selected':'' %> >Amarillo  </option>
+                    <option value="red"<%= (lightcolor == 'red')?'selected':'' %> >Rojo</option>
+                    <option value="blue"<%= (lightcolor == 'blue')?'selected':'' %> >Azul</option>
+                    <option value="green"<%= (lightcolor == 'green')?'selected':'' %> >Verde</option>
+                </select>
+
+                <div>
+                    <p> <button type="submit ">Cambia color</button> </p>
+                </div>
+
+                <div>
+                    <label>¿Deseas recordar el color elegido?</label>
+                    <input type="checkbox" value="checkbox">
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

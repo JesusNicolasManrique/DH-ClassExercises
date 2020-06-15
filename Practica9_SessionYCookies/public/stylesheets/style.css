@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body {
+    font: 14px "Raleway", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.red {
+    fill: red;
+    color: whitesmoke;
+}
+
+.light-red {
+    fill: rgb(252, 141, 141);
+    color: whitesmoke;
+}
+
+.yellow {
+    fill: rgb(253, 236, 0);
+}
+
+.light-yellow {
+    fill: rgb(255, 255, 131);
+}
+
+.green {
+    fill: green;
+}
+
+.light-green {
+    fill: rgb(83, 143, 83);
+}
+
+.blue {
+    fill: blue;
+    color: whitesmoke;
+}
+
+.light-blue {
+    fill: rgb(120, 120, 247);
+    color: whitesmoke;
+}
+
+.container {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    background-color: rgb(128, 128, 128, 0.9);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+select {
+    width: 180px;
+}
