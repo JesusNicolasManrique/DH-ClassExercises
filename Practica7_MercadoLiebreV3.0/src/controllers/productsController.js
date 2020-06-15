@@ -1,15 +1,25 @@
 const fs = require('fs');
 const path = require('path');
-
+const db = require("../database/models");
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+//const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+function obtenerProductos() {
+
+
+
+
+}
 
 const controller = {
     // Root - Show all products
     root: (req, res) => {
-        res.render('products', { data: products, toThousand });
+
+        db.Productos.findAll().then((productos) => {
+            res.render('products', { productos: productos, toThousand });
+        });
     },
 
     // Detail - Detail from one product
@@ -40,7 +50,11 @@ const controller = {
     },
     // Update - Method to update
     update: (req, res) => {
-        // Do the magic
+        let productEdited = req.body;
+        let productToEdit = products.filter(product => product.id == productID);
+        console.log(productToEdit);
+        res.render('product-edit-form', { product: productToEdit[0], toThousand, title: productToEdit[0].name });
+
     },
 
     // Delete - Delete one product from DB
