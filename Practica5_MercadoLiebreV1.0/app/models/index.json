@@ -1,0 +1,38 @@
+{
+    "products": [{
+            "img": "../images/img-cafetera-moulinex.jpg",
+            "price": "$6.770",
+            "title": "Cafetera Moulinex Dolce Gusto",
+            "description": "Lorem ipsum, dolor sit amet.",
+            "discount": "40% OFF"
+        },
+        {
+            "img": "../images/img-macbook-pro-2019.jpg",
+            "price": "$150.970",
+            "title": "Macbook Pro 2019",
+            "discount": "10% OFF",
+            "description": "Lorem ipsum, dolor sit amet."
+        },
+        {
+            "img": "../images/img-tv-samsung-smart.jpg",
+            "price": "$54.230",
+            "title": "Televisor Samsung Smart TV",
+            "discount": "",
+            "description": "Lorem ipsum, dolor sit amet."
+        },
+        {
+            "img": "../images/img-samsung-galaxy-s10.jpg",
+            "price": "$89.410",
+            "title": "Samsung Galaxy s10",
+            "discount": "20% OFF",
+            "description": "Lorem ipsum, dolor sit amet."
+        }
+    ],
+
+    "menues": {
+        "title1": "Ofertas",
+        "title2": "Tiendas Oficiales",
+        "title3": "Vender",
+        "title4": "Ayuda"
+    }
+}
